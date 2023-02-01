@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Big Blue House</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<link rel = "stylesheet" type = "text/css" href = "HouseStyle.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+<script type = "text/javascript" src="..\src\FunFacts.js"></script> 
+
+<!-- internal css -->
+<style>
+#aboutSection {
+	 border: 5px outset #9482F5;
+  background-color: lightblue;
+  text-align: center;
+}
+</style>
+
+</head>
+<body>
+	<div id = "review">
+	<h1 id ="welcome">Bear in the Big Blue House!</h1>
+	<h2 id ="welcome">Created by Mitchell Kriegman</h2>
+	</div>
+	<img alt="Bear" src="https://lumiere-a.akamaihd.net/v1/images/pp_bearinthebigbluehouse_herobanner_mobile_19871_361af0ba.jpeg" class= "welcomeBear">
+
+
+	<h3 id ="welcome">Let's learn more!</h3>
+		<select id = "about" name ="aboutSection" onchange ="aboutDropBox(this);">
+			<option value ="default"> ---Choose an Option--- </option>
+			<option value = "creator"> About Creator </option>
+			<option value = "serial"> About Serialization </option>
+			<option value = "inspiration"> About It's Purpose </option>
+		</select>
+
+					<div id ="aboutSection">
+					<p id = "about1"></p>
+					</div>
+
+<div id = "aboutNav">
+<h2> Navigation:</h2>
+		<nav>
+		<a href="..\src\BlueActors.html" class = "center">Visit The Voice Cast!</a>
+		<br>	
+		 <a href="..\src\Trivia.html" class = "center">Fun Facts & Trivia!</a>
+		</nav>
+</div>
+
+
+<div id= "review">
+	<h3 id= "welcome">Sign up here to join our Newsletter!</h3>
+	<form name = "newsletter" method ="GET" id ="newsForm" action = "Newsletter.html" onsubmit ="validate(event)" >
+	<table cellspacing = "2" cellpadding = "2" border = "1">
+		<tr>
+		<td><input type = "text" name = "Name" value = "" id = "nameID" placeholder = "Enter Name" > </td>
+		</tr>
+		
+		<tr>
+		<td><input type = "email" name = "Email" value = "" id = "emailID" placeholder = "Enter Email" > </td>
+		</tr>
+
+
+<tr>
+	<td><select name ="Country" id = "countryID">
+			<option value = "Default">[Select Country]</option>
+			<option> United States </option>
+			<option> United Kingdom </option>
+			<option> Canada </option>
+			<option> China </option>
+			<option> Russia </option>
+	</select> 
+	</td>
+</tr>
+	<tr>
+		<td> <input type = "submit" value ="Register"/></td>
+	</tr>
+</table>
+</form>
+</div>
+</body>
+</html>
